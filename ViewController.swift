@@ -15,12 +15,15 @@ class ViewController: UIViewController {
     var scale = CGFloat (1.0)
     var rotate = CGFloat (0)
     var resetInitialCenter: CGPoint!
+
     
     //MARK: Outlets
 
     @IBOutlet weak var messageRabbit: UITextField!
     @IBOutlet weak var rabbitImageView: UIImageView!
-
+    @IBOutlet weak var responseLabel: UILabel!
+    @IBOutlet weak var thinkingIndicator: UIActivityIndicatorView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -102,7 +105,7 @@ class ViewController: UIViewController {
         
         }
     
-    @IBAction func btnResetPressed(sender: AnyObject) {
+    @IBAction func resetBtnPressed(sender: AnyObject) {
         
         UIView.animateWithDuration(1.0) { () -> Void in
         self.rabbitImageView.center = self.resetInitialCenter
@@ -111,5 +114,53 @@ class ViewController: UIViewController {
         }
         
     }
+    
+    @IBAction func sendBtnPressed(sender: AnyObject) {
+        if messageRabbit.text == "Hello"{
+                messageRabbit.text = ""
+                responseLabel.text = ""
+                self.thinkingIndicator.startAnimating()
+                delay(1.5, closure: { () -> () in
+                self.responseLabel.text = "Hey there!"
+                    self.thinkingIndicator.stopAnimating()
+                    
+            })
+            
+        } else if messageRabbit.text == "What is your name?" {
+            responseLabel.text = "Bunny"
+                    messageRabbit.text = ""
+                    responseLabel.text = ""
+                    self.thinkingIndicator.startAnimating()
+                    delay(1.5, closure: { () -> () in
+                        self.responseLabel.text = "Bunny!"
+                        self.thinkingIndicator.stopAnimating()
+                        
+                    })
+            
+        } else {
+            responseLabel.text = "I don't speak human very well"
+        }
+    }
+    
+    @IBAction func logoutBtnPressed(sender: AnyObject) { dismissViewControllerAnimated(true, completion: nil)
+    }
 
 }
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
