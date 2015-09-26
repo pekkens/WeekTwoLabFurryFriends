@@ -47,6 +47,8 @@ class LogInViewController: UIViewController {
         } else {
             var alert = UIAlertView (title: "Error", message: "Oops!", delegate: nil, cancelButtonTitle: "Try again")
         }
+        userName.text = ""
+        password.text = ""
     }
     
 }

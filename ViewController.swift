@@ -126,7 +126,7 @@ class ViewController: UIViewController, UIActionSheetDelegate {
                     
             })
             
-        } else if messageRabbit.text == "What is your name?" {
+        } else if messageRabbit.text == "What's your name?" {
             responseLabel.text = "Bunny"
                     messageRabbit.text = ""
                     responseLabel.text = ""
@@ -161,6 +161,7 @@ class ViewController: UIViewController, UIActionSheetDelegate {
     }
 
 }
+
 
 
     
