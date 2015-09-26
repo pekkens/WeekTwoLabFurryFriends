@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIActionSheetDelegate {
     
     //MARK: Global Variables
     
@@ -142,7 +142,22 @@ class ViewController: UIViewController {
         }
     }
     
-    @IBAction func logoutBtnPressed(sender: AnyObject) { dismissViewControllerAnimated(true, completion: nil)
+    @IBAction func logoutBtnPressed(sender: AnyObject) {
+        
+        let actionSheet =
+        UIActionSheet (title: "Are you sure?", delegate: self, cancelButtonTitle: "Nah, just joking.", destructiveButtonTitle: "Yes, Bye-Bye!")
+        
+        actionSheet.showInView(view)
+        
+        
+        
+    }
+    
+    func actionSheet(actionSheet: UIActionSheet, clickedButtonAtIndex buttonIndex: Int) {
+        if buttonIndex == 0 {
+            dismissViewControllerAnimated(true, completion: nil)
+            
+        }
     }
 
 }

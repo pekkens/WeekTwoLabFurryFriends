@@ -42,8 +42,11 @@ class LogInViewController: UIViewController {
     
     @IBAction func loginBtnPressed(sender: AnyObject) {
         
-        performSegueWithIdentifier("loginSegue", sender: nil)
+        if userName.text == "Prisca" && password.text == "password"{
+            performSegueWithIdentifier("loginSegue", sender: nil)
+        } else {
+            var alert = UIAlertView (title: "Error", message: "Oops!", delegate: nil, cancelButtonTitle: "Try again")
+        }
     }
-    
     
 }
