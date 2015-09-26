@@ -1,7 +1,7 @@
 # Week 02 Lab: Furry Friends
 Animation, login screens, alert view and acction sheets in Xcode
 
-This is an iOS demo using animation and ssimple functions to create interaction. See video for class notes: https://www.youtube.com/watch?v=vtAqXgOozZ8&list=PLrT2tZ9JRrf7bg_9eVWknLVTF7FWzA84x&index=2
+This is an iOS demo using animation and simple functions to create interaction. See video for class notes: https://www.youtube.com/watch?v=vtAqXgOozZ8&list=PLrT2tZ9JRrf7bg_9eVWknLVTF7FWzA84x&index=2
 
 Time spent: 3 hours
 
