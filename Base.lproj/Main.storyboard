@@ -12,12 +12,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="field" id="gA4-v3-OfB">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="C5e-Yr-HQ8">
-                                <rect key="frame" x="151" y="540" width="19" height="23"/>
+                                <rect key="frame" x="108" y="538" width="19" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="downArrow"/>
                                 <connections>
@@ -25,7 +21,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="mCD-jK-qfW">
-                                <rect key="frame" x="170" y="523" width="23" height="22"/>
+                                <rect key="frame" x="127" y="522" width="23" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="rightArrow"/>
                                 <connections>
@@ -33,23 +29,15 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="gSx-pd-kgE">
-                                <rect key="frame" x="128" y="523" width="23" height="22"/>
+                                <rect key="frame" x="85" y="522" width="23" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="leftArrow"/>
                                 <connections>
                                     <action selector="btnMovesRabbitLeft:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v2k-sL-DaA"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="uCL-nI-lD8">
-                                <rect key="frame" x="151" y="504" width="19" height="23"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="upArrow"/>
-                                <connections>
-                                    <action selector="btnMovesRabbitUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AIB-Ia-bRE"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Boi-Dx-saH">
-                                <rect key="frame" x="75" y="524" width="19" height="20"/>
+                                <rect key="frame" x="276" y="522" width="19" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="rotateRight"/>
                                 <connections>
@@ -57,7 +45,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bHy-Re-88K">
-                                <rect key="frame" x="220" y="522" width="36" height="22"/>
+                                <rect key="frame" x="159" y="520" width="36" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="tear"/>
                                 <connections>
@@ -65,7 +53,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="mBb-jk-fnu">
-                                <rect key="frame" x="37" y="523" width="20" height="22"/>
+                                <rect key="frame" x="248" y="521" width="20" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="rotateLeft"/>
                                 <connections>
@@ -73,22 +61,57 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="r8y-ey-z62">
-                                <rect key="frame" x="259" y="522" width="36" height="22"/>
+                                <rect key="frame" x="195" y="522" width="36" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="leaf"/>
                                 <connections>
                                     <action selector="btnGrowsRabbit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mmI-Lt-bVu"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="uCL-nI-lD8">
+                                <rect key="frame" x="108" y="502" width="19" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="upArrow"/>
+                                <connections>
+                                    <action selector="btnMovesRabbitUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AIB-Ia-bRE"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="oBe-ft-pYZ">
+                                <rect key="frame" x="49" y="68" width="144" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5jy-Pi-fJW">
+                                <rect key="frame" x="20" y="518" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnResetPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bno-n1-dkw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5cH-Kr-S85">
+                                <rect key="frame" x="201" y="67" width="36" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Send"/>
+                            </button>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="bunny" id="ZiE-S8-IcO">
                                 <rect key="frame" x="135" y="249" width="50" height="70"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="field" id="gA4-v3-OfB">
+                                <rect key="frame" x="20" y="8" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="rabbitImageView" destination="ZiE-S8-IcO" id="AZs-q2-OeT"/>
+                        <outlet property="messageRabbit" destination="oBe-ft-pYZ" id="OwK-dv-gpG"/>
+                        <outlet property="rabbitImageView" destination="ZiE-S8-IcO" id="78H-8Y-lkr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

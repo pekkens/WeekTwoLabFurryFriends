@@ -14,13 +14,17 @@ class ViewController: UIViewController {
     
     var scale = CGFloat (1.0)
     var rotate = CGFloat (0)
+    var resetInitialCenter: CGPoint!
     
     //MARK: Outlets
 
+    @IBOutlet weak var messageRabbit: UITextField!
     @IBOutlet weak var rabbitImageView: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        resetInitialCenter = rabbitImageView.center
         
     }
     
@@ -97,6 +101,15 @@ class ViewController: UIViewController {
         self.updateTransform()
         
         }
-
+    
+    @IBAction func btnResetPressed(sender: AnyObject) {
+        
+        UIView.animateWithDuration(1.0) { () -> Void in
+        self.rabbitImageView.center = self.resetInitialCenter
+        self.rabbitImageView.transform = CGAffineTransformIdentity
+            
+        }
+        
+    }
 
 }
